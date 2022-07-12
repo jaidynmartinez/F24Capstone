@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Timothy Hay",
+        "price": 1.00,
+        "image": "https://www.meijer.com/content/dam/meijer/product/0007/18/5994/91/0007185994919_2_A1C1_1200.png"
+    },
+    {
+        "id": 2,
+        "title": "Alfalfa Hay",
+        "price": 3.00,
+        "image": "https://m.media-amazon.com/images/I/81+k60LR-cL._AC_SL1500_.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Adult Rabbit Pellets",
+        "price": 2.00,
+        "image": "https://assets.petco.com/petco/image/upload/f_auto,q_auto/2694843-center-1"
+    },
+    {
+        "id": 4,
+        "title": "Young Rabbit Pellets",
+        "price": 2.00,
+        "image": "https://cdn.shopify.com/s/files/1/2415/4421/products/Young-Rabbit-Front_366_399_s_366x399.png?v=1571612052"
+    }
+]

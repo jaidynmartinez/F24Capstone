@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    background-color: #cccccc;
+    background-image: url(../images/grass1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+/* TITLES///////////////////////////////////// */
+.intro{
+    text-align: center;
+    font-family: Apple Chancery;
+    /* background: #AED9E0 */
+    font-size: 25px
+    ;
+}
+#hometitle{
+    position: relative;
+    text-align: center;
+    top: 60px;
+    font-size: 40px;
+}
+
+/* HEADER/////////////////////////////// */
+#logo{position: relative; top: 80px; width: 180px;}
+#login{padding-right: 10px; padding-top:50px}
+header{display: flex; justify-content: space-around}
+#rectangle{
+    border-radius: 25px;
+    background: #ffffff;
+    width: 70vw;
+    height: 100px;
+    color: rgb(234, 155, 168);
+    text-align: center;
+    font-family: Apple Chancery, cursive;
+    font-size: 80px;
+    
+}
+
+/* NAV BAR////////////////////////////////////////////// */
+nav{
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav ul{
+    padding: 10px
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    font-family: arial;
+    color: pink;
+    font-size: 25px;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+#home{padding-left: 60px; padding-right: 60px}
+#shop{padding-left: 60px; padding-right: 60px}
+#avail{padding-left: 60px; padding-right: 60px}
+#article{padding-left: 60px; padding-right: 60px}
+#cart{padding-left: 60px; padding-right: 60px}
+
+nav ul li #shopdrop{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+}
+#shop:hover #shopdrop{
+    display: block;
+}
+nav ul li #availdrop{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+}
+#avail:hover #availdrop{
+    display: block;
+}
+nav ul li #articledrop{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+}
+#article:hover #articledrop{
+    display: block;
+}
+nav ul li ul li{
+    width: 180px;
+    border-radius: 5px;
+}
+nav ul li ul li a{
+    padding: 10px 10px;
+    font-size: 20px
+}
+nav ul li #availdrop li a:hover{
+    background-color: rgb(255, 238, 241);
+    width:237px
+}
+nav ul li #shopdrop li a:hover{
+    background-color: rgb(255, 238, 241);
+    width:160px
+}
+nav ul li #articledrop li a:hover{
+    background-color: rgb(255, 238, 241);
+    width:160px
+}
+/* //// SEARCH BAR */
+
+form {
+    background-color: pink;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+/* MAIN BODY////////////////////////////////////////////// */
+main{
+    background-color: #AED9E0;
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    border-radius: 5px;
+}
+
+
+
+
