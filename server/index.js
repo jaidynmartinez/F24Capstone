@@ -8,14 +8,15 @@ const {seed} = require('./seed.js')
 app.use(express.json())
 app.use(cors())
 
-const {getUserInfo, updateInfo, getBunny} = require('./controller')
+const {createUserInfo, getBunny, getItems} = require('./controller')
 
 app.post('/seed', seed)
 
-app.get('/user', getUserInfo);
-app.put('/user', updateInfo);
+app.post('/signup', createUserInfo);
 
 app.get('/adoptions', getBunny)
+
+app.get('/shop', getItems)
 
 
 app.listen(5500, () => console.log('Server running on 5500'))

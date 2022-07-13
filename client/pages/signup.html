@@ -16,6 +16,10 @@
     <h3 class="intro">Everyone needs a friend who's all ears!</h3>
         
         <nav>
+            <form id="form"> 
+                <input type="search" id="query" name="q" placeholder="Search...">
+                <button>Search</button>
+            </form>
             <ul>
                 <li id="home"><a href="../index.html">Home</a></li>
                 <li id="shop"><a href="shop.html">Shop</a>
@@ -42,37 +46,39 @@
         </nav>
     </header>
     <h1 id="hometitle">This BUN NEEDS You!</h1><br>
-    
+    <main>
     <h2 class="intro">Sign Up Here: </h2>
-    <div id="form">
-    <form id="profile-form">
+    <div id="userFormContainer">
+    <form id="userFormBox">
         <label for="first-name">First Name:</label>
-        <input type="text" id="first-name"/>
+        <input type="text" class="textbox" id="firstName"/>
 
         <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name"/>
+        <input type="text" class="textbox" id="lastName"/>
 
         <label for="phone-number">Phone Number:</label>
-        <input type="text" id="phone-number"/>
+        <input type="text" class="textbox" id="phone"/>
 
         <label for="email">Email:</label>
-        <input type="text" id="email"/>
-
-        <label for="address">Address:</label>
-        <input type="text" id="address"/>
+        <input type="text" class="textbox" id="email"/>
 
         <label for="city">City:</label>
-        <input type="text" id="city"/>
+        <input type="text" class="textbox" id="city"/>
 
         <label for="state">State:</label>
-        <input type="text" id="state"/>
+        <input type="text" class="textbox" id="state"/>
 
         <label for="zip-code">Zip Code:</label>
-        <input type="text" id="zip-code"/>
+        <input type="text" class="textbox" id="zipcode"/>
 
-        <input type="submit" id="save" value="Save"> 
+        <input type="submit" class="save" value="Save"> 
     </form>
 </div>
+    </main>
+<footer>
 
+</footer>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../main.js"></script>
 </body>
 </html>

@@ -150,7 +150,11 @@ main{
     height: 100vh;
     border-radius: 5px;
 }
-
+/* FOOTER /////////////////////////// */
+footer{
+    background: pink;
+    height: 150px
+}
 
 
 

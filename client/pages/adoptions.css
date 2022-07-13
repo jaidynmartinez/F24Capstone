@@ -151,3 +151,65 @@ main{
     height: 100vh;
     border-radius: 5px;
 }
+
+#randomBunDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+#randomBunBtn {
+    background-color: pink;
+    color: white;
+    border-color: pink;
+    border-radius: 5px
+}
+#firstBunRow{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px
+}
+.bunImg{
+    display: block;
+    height: 100px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.304)
+}
+.bunCard {
+    background-color: rgb(255, 222, 227);
+    color: rgb(0, 0, 0);
+    height:250px;
+    width: 200px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.344);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .4s;
+}
+.link {
+    background-color: rgb(255, 122, 144);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.215)
+}
+.click{
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    background-color: rgba(255, 122, 144, 0.402);
+    padding: 5px;
+    border-radius: 5px
+}
+div .bunCard:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+/* FOOTER /////////////////////////// */
+footer{
+    background: pink;
+    height: 150px
+}
