@@ -57,29 +57,41 @@ if (randomBun) randomBun.addEventListener('click', getBunny)
 
 
 // ITEMS ////////////////////////////
+const itemsCallback = ({ data: items }) => displayItems(items)
 const itemsContainer = document.getElementById('items-container')
-// const itemsCard = document.createElement('div')
 
 const getItems = () => {
-    console.log('hit getItems')
+    // console.log('hit getItems')
     axios.get("http://localhost:5500/shop")
     .then(res => {
+        let data = res.data
         console.log(res.data)
+        itemsCallback
     }).catch(error => {
         console.log(error)
     })
-    
 }
-// itemsCard.innerHTML = `
-// <div class="itemscard">
-// <div>
-//     <img src="${items.image}">
-//     <h2 class="title">${items.title}</h2>
-//     <h3>${items.price}</h3>
-// </div>
-// </div>
-// `
 
-// itemsContainer.appendChild(itemsCard)
+const createItemsCard = (items) => {
+    const itemCard = document.createElement('div')
+    itemCard.innerHTML = `
+    <div class="itemcard">
+    <div>
+    <img src="${items.image}">
+    <h2 class="title">${items.title}</h2>
+    <h3>${items.price}</h3>
+    </div>
+    </div>
+    `;
+    itemsContainer.appendChild(itemCard)
+}
+
+displayItems = (arr) => {
+    itemsContainer.innerHTML = ''
+    console.log('display items hit')
+    for (let i=0; i< arr.length; i++){
+        createItemsCard(arr[i])
+    }
+}
 
 getItems()
