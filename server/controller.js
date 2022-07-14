@@ -40,7 +40,7 @@ module.exports = {
         res.status(200).send("Success! We'll contact you soon!")
     },
     getItems: (req, res) => {
-        console.log('hit server')
+        // console.log('hit server')
             res.status(200).send(items)
     }
 }

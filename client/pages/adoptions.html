@@ -4,83 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BunNeeds - Adoptions!</title>
+    <title>BunNeeds - Adopt & Shop!</title>
     <link rel="stylesheet" href="./adoptions.css">
 </head>
+
 <body>
+    <section id="bgcontainer">
+    <div id="backgrounddiv"></div>
+    </section>      
     <header>
+        <div id="designdiv1"></div>
         <img id="logo" src="../images/logo.png" alt="logo">
         <h1 id="rectangle">BunNeeds</h1>
-        <p id="login">Login/ Sign Up</p>
     </header>
-    <h3 class="intro">Everyone needs a friend who's all ears!</h3>
-
+    <h3 class="introcontainer">
+    <h3 class="intro">Adopt Your New Best Friend!</h3>
+    </h3>
     <nav>
-        <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search...">
-            <button>Search</button>
-        </form>
+        <form role="search" id="form">
+            <input type="search" id="query" name="q"
+             placeholder="Search..."
+             aria-label="Search through site content">
+            <button>
+              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+          </form>
         <ul>
             <li id="home"><a href="../index.html">Home</a></li>
-            <li id="shop"><a href="shop.html">Shop</a>
-                <ul id="shopdrop">
-                    <li><a href="#">Items</a>
-                    </li>
-                    <li><a href="#">Clearance</a></li>
-                </ul>
-            </li>
-            <li id="avail"><a href="adoptions.html">Bunnies Available</a>
-                <ul id="availdrop">
-                    <li><a href="#">Adoptables</a></li>
-                    <li><a href="#">Fosters</a></li>
-                </ul>
-            </li>
-            <li id="article"><a href="articles.html">Articles</a>
-                <ul id="articledrop">
-                    <li><a href="#">Rabbit Care</a></li>
-                    <li><a href="#">Litter Training</a></li>
-                </ul>
-            </li>
-            <li id="cart"><a href="cart.html">Cart</a></li>
-        </ul>
+            <li id="shop"><a href="./items.html">Shop</a></li>
+            <li id="avail"><a href="./adoptions.html">Bunnies Available</a></li>        </ul>
     </nav>
-    <h1 class="intro">Adopt you new best friends!</h1>
+
     <main>
-    <div id="randomBunDiv"><button id="randomBunBtn">Having trouble deciding? Click me!</button></div>
-
-    <div id="firstBunRow">
-        <div class="bunCard">
-            <h2><a class="link" href="signup.html">Blossom</a></h2>
-            <img class="bunImg" src="https://www.ohiohollandlops.com/uploads/5/0/2/8/50280945/tommy-3_orig.jpg">
-            <p>6 Months</p>
-            <p><a class="click" href="signup.html">Click to view</a></p>
+        <h1 class="hometitle">Adopt you new best friends!</h1>
+        
+        <div id="firstBunRow">
+            <div class="bunCard">
+                <h2><a class="link" href="signup.html">Blossom</a></h2>
+                <img class="bunImg" src="https://www.ohiohollandlops.com/uploads/5/0/2/8/50280945/tommy-3_orig.jpg">
+                <p>6 Months</p>
+                <p><a class="click" href="signup.html">Contact Us</a></p>
+            </div>
+            <div class="bunCard">
+                <h2><a class="link" href="signup.html">Chop Suey</a></h2>
+                <img class="bunImg" src="https://www.ntu.ac.uk/__data/assets/image/0035/884573/Otis-Havana.jpg">
+                <p>9 Months</p>
+                <p><a class="click" href="signup.html">Contact Us</a></p>
+            </div>
+            <div class="bunCard">
+                
+                <h2><a class="link" href="signup.html">Charlotte</a></h2>
+                <img class="bunImg" src="https://img1.wsimg.com/isteam/ip/8a3f2e56-041c-4c4d-97a1-f4f9580688db/cb2b9c8a3cf6ff2350ca5b7b87694c5b.jpg">
+                <p>1 Year</p>
+                <p><a class="click" href="signup.html">Contact Us</a></p>
+            </div>
+            <div class="bunCard">
+                <h2><a class="link" href="signup.html">Cocomelon</a></h2>
+                <img class="bunImg" src="https://rabbitbreeders.us/wp-content/uploads/Raising-Rabbits-Outdoors.jpg">
+                <p>4 Years</p>
+                <p><a class="click" href="signup.html">Contact Us</a></p>
+            </div>
         </div>
-        <div class="bunCard">
-            <h2><a class="link" href="signup.html">Chop Suey</a></h2>
-            <img class="bunImg" src="https://www.ntu.ac.uk/__data/assets/image/0035/884573/Otis-Havana.jpg">
-            <p>9 Months</p>
-            <p><a class="click" href="signup.html">Click to view</a></p>
-        </div>
-        <div class="bunCard">
-            
-            <h2><a class="link" href="signup.html">Charlotte</a></h2>
-            <img class="bunImg" src="https://img1.wsimg.com/isteam/ip/8a3f2e56-041c-4c4d-97a1-f4f9580688db/cb2b9c8a3cf6ff2350ca5b7b87694c5b.jpg">
-            <p>1 Year</p>
-            <p><a class="click" href="signup.html">Click to view</a></p>
-        </div>
-        <div class="bunCard">
-            <h2><a class="link" href="signup.html">Cocomelon</a></h2>
-            <img class="bunImg" src="https://rabbitbreeders.us/wp-content/uploads/Raising-Rabbits-Outdoors.jpg">
-            <p>4 Years</p>
-            <p><a class="click" href="signup.html">Click to view</a></p>
-        </div>
-    </div>
+        <div id="randomBunDiv"><button id="randomBunBtn">Having trouble deciding? Click me!</button></div>
     </main>
-    <footer>
+    
+    <section id="footercontainer">
+        <footer>
+            
+        </footer>
+    </section>
 
-    </footer>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../main.js"></script>
 </body>
 </html>
-

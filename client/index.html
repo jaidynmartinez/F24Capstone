@@ -9,40 +9,30 @@
 </head>
 
 <body>
-
+    <section id="bgcontainer">
+    <div id="backgrounddiv"></div>
+    </section>      
     <header>
-        <!-- <img id="logo" src="images/logo.png" alt="logo"> -->
+        <div id="designdiv1"></div>
+        <img id="logo" src="images/logo.png" alt="logo">
         <h1 id="rectangle">BunNeeds</h1>
     </header>
+    <h3 class="introcontainer">
     <h3 class="intro">Everyone needs a friend who's all ears!</h3>
-
+    </h3>
     <nav>
-        <form id="form"> 
-            <input type="search" id="query" name="q" placeholder="Search...">
-            <button>Search</button>
-        </form>
+        <form role="search" id="form">
+            <input type="search" id="query" name="q"
+             placeholder="Search..."
+             aria-label="Search through site content">
+            <button>
+              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+          </form>
         <ul>
             <li id="home"><a href="index.html">Home</a></li>
-            <li id="shop"><a href="pages/shop.html">Shop</a>
-                <ul id="shopdrop">
-                    <li><a href="#">Items</a>
-                    </li>
-                    <li><a href="#">Clearance</a></li>
-                </ul>
-            </li>
-            <li id="avail"><a href="pages/adoptions.html">Bunnies Available</a>
-                <ul id="availdrop">
-                    <li><a href="#">Adoptables</a></li>
-                    <li><a href="#">Fosters</a></li>
-                </ul>
-            </li>
-            <li id="article"><a href="pages/articles.html">Articles</a>
-                <ul id="articledrop">
-                    <li><a href="#">Rabbit Care</a></li>
-                    <li><a href="#">Litter Training</a></li>
-                </ul>
-            </li>
-            <li id="cart"><a href="pages/cart.html">Cart</a></li>
+            <li id="shop"><a href="./pages/items.html">Shop</a></li>
+            <li id="avail"><a href="pages/adoptions.html">Bunnies Available</a> </li>
         </ul>
     </nav>
 
@@ -56,35 +46,72 @@
         </div>
         <div class="circlecontainer">
             <img id="circle" src="images/cutebun.jpeg" alt="shop items">
-            <h2 class="circletext"><a class="text" href="pages/adoptions.html">SHOP</a></h2>
+            <h2 class="circletext"><a class="text" href="pages/items.html">SHOP</a></h2>
         </div>
         <div class="circlecontainer">
+            <h2 class="circletext"><a class="text" href="pages/signup.html">VOLUNTEER</a></h2>
             <img id="circle" src="images/babybun.jpeg" alt="volunteer pic">
-            <h2 class="circletext"><a class="text" href="pages/adoptions.html">VOLUNTEER</a></h2>
         </div>
         </div>
-        <div id="saleDiv ">
-            
+
+        <h4 id="articletitle">Help your furry friend stay cool this summer!</h4>
+        <div class="articlediv1">
+            <a href="https://bunnylady.com/keep-cool-in-the-summer/"><img id="sumrabbit" src="./images/sumrabbit.webp"></a>
         </div>
-        <!-- <div class="salediv">
-            <h1>SALE!</h1>
-            <h4>Check out marked down items and our clearance rack for some out-of-season favorites!</h4>
-            <img src="" alt="sale item">
-            <img src="" alt="sale item">
-            <img src="" alt="sale item">
-        </div>
-        <div class="articlediv">
-            <h1>DID YOU KNOW?</h1>
-             <img id="image1" src="images/houserabbit.jpeg" alt="article">
-            <img id="image1" src="images/outsiderabbit.jpeg" alt="article">
-            <img id="image1" src="images/summerrabbit.jpeg" alt="article"> -->
-        <!-- </div> -->
-        
+        <div class="articlediv2">
+          <a href="https://rabbit.org/keep-your-rabbit-cool-in-the-summer/"><img id="houserabbit" src="./images/summerrabbit.jpeg"></a>
+      </div>
+
+<div class="newItems">
+    <h1 id="itemsTitle">Check out the new styles this season!</h1>
+    <a href="./pages/items.html"><img id="newItemImg1" src="./images/bunnyharness.jpeg"></a>
+    <a href="./pages/items.html"><img id="newItemImg2" src="./images/rabbitdress.jpeg"></a>
+    <a href="./pages/items.html"><img id="newItemImg3" src="./images/bunnyharness2.jpeg"></a>
+</div>
+
+    <div id="entirearticlediv">
+<h1 id="slidetitle">FOSTERS IN NEED!</h1>
+<p id="slidepara">Have some extra time to snuggle up with one of these? Contact Us now!</p><br>
+<a id="fosterformlink" href="./fosters.html">FOSTER FORM</a>
+ <div class="slideshow-container fade">
+    <div class="Containers">
+      <div class="MessageInfo">1 / 3</div>
+      <img id="img1" src="./images/elvirabun.jpeg" style="width:100%">
+      <div class="Info">Elvira</div>
+    </div>
+    <div class="Containers">
+      <div class="MessageInfo">2 / 3</div>
+      <img id="img2" src="./images/pibnrombun.jpeg" style="width:100%">
+      <div class="Info">Pibble & Roman</div>
+    </div>
+    <div class="Containers">
+      <div class="MessageInfo">3 / 3</div>
+      <img id="img3" src="./images/xylanyulibun.jpeg" style="width:100%">
+      <div class="Info">Petal & Xyla</div>
+    </div>
+    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div>
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+  </div> 
+    </div>
+
     </main>
 
-    <footer>
+    <section id="footercontainer">
+        <footer>
+<h3>CONTACT US AT:</h3>
+    <p>Phone: +1-BUN-888-5555</p>
+    <p>Email: bunNeedsYou@gmail.com</p>
+    <p>Instagram: bunNeedsCo</p>
+    <p>Twitter: bunNeedsCo</p>
+        </footer>
+    </section>
 
-    </footer>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
 </body>

@@ -1,126 +1,120 @@
 body {
     margin: 0;
-    background-color: #cccccc;
-    background-image: url(../images/grass1.jpeg);
+    background-color: #d6ac9a;
+    /* background-image: url(images/background.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
-}
-.intro{
-    text-align: center;
-    font-family: Apple Chancery;
-    font-size: 25px
-    ;
-}
-#hometitle{
+  }
+  
+  
+  /* HEADER/////////////////////////////// */
+  #designdiv1{
+    position: absolute;
+    background-color: rgb(102, 34, 34);
+    height:100px;
+    width: 100vw
+  }
+  header{display: flex; justify-content: space-around}
+  #rectangle{
     position: relative;
-    text-align: center;
-    top: 60px;
-    font-size: 40px;
-}
-
-
-/* HEADER/////////////////////////////// */
-#logo{position: relative; top: 80px; width: 180px;}
-#login{padding-right: 10px; padding-top:50px}
-header{display: flex; justify-content: space-around}
-#rectangle{
     border-radius: 25px;
-    background: #ffffff;
-    width: 70vw;
+    background: #ead5c8;
+    width: 60vw;
     height: 100px;
-    color: rgb(234, 155, 168);
+    color: rgb(102, 34, 34);
     text-align: center;
     font-family: Apple Chancery, cursive;
     font-size: 80px;
-    
-}
-
-/* NAV BAR////////////////////////////////////////////// */
-nav{
+  }
+  #logo{position: absolute; top: 60px; width: 160px; height: 180px; left: 50px}
+  
+  
+  /* TITLES//////////////////////////////////// */
+  .introcontainer{display: flex; align-items: center;}
+  .intro{
+    position:relative;
+    text-align: center;
+    color: white;
+    font-family: Apple Chancery;
+    font-size: 25px;
+  }
+  #hometitle{
+    position: relative;
+    text-align: center;
+    top: 185px;
+    font-size: 40px;
+    color: white;
+    width: 100vw;
+    font-family: Apple Chancery, cursive;
+    background-color: rgb(102, 34, 34)
+  }
+  
+  /* NAV BAR////////////////////////////////////////////// */
+  nav{
     margin: auto;
+    position:absolute;
     width: 100%;
-    height: 60px;
-    background-color: white;
+    height: 100px;
+    background-color: #ead5c8;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-nav ul{
+    box-shadow: 0 4px 8px 0 rgba(108, 41, 95, 0.31)
+  }
+  nav ul{
     padding: 10px
-}
-nav ul li{
+  }
+  nav ul li{
     float: left;
     list-style: none;
     position: relative;
-}
-nav ul li a{
+  }
+  nav ul li a{
     display: block;
     font-family: arial;
-    color: pink;
+    color: rgb(102, 34, 34);
     font-size: 25px;
     padding: 0px 10px;
     text-decoration: none;
-}
-
-#home{padding-left: 60px; padding-right: 60px}
-#shop{padding-left: 60px; padding-right: 60px}
-#avail{padding-left: 60px; padding-right: 60px}
-#article{padding-left: 60px; padding-right: 60px}
-#cart{padding-left: 60px; padding-right: 60px}
-
-nav ul li #shopdrop{
-    display: none;
-    position: absolute;
-    background-color: white;
-    border-radius: 0px 0px 4px 4px;
-}
-#shop:hover #shopdrop{
-    display: block;
-}
-nav ul li #availdrop{
-    display: none;
-    position: absolute;
-    background-color: white;
-    border-radius: 0px 0px 4px 4px;
-}
-#avail:hover #availdrop{
-    display: block;
-}
-nav ul li #articledrop{
-    display: none;
-    position: absolute;
-    background-color: white;
-    border-radius: 0px 0px 4px 4px;
-}
-#article:hover #articledrop{
-    display: block;
-}
-nav ul li ul li{
+  }
+  
+  #home{padding-left: 60px; padding-right: 60px}
+  #shop{padding-left: 60px; padding-right: 60px}
+  #avail{padding-left: 60px; padding-right: 60px}
+  #article{padding-left: 60px; padding-right: 60px}
+  #cart{padding-left: 60px; padding-right: 60px}
+  
+  #home:hover{background-color: rgba(108, 41, 95, 0.181); border-radius: 30px;}
+  #shop:hover{background-color: rgba(108, 41, 95, 0.181); border-radius: 30px;}
+  #avail:hover{background-color: rgba(108, 41, 95, 0.181); border-radius: 30px;} 
+  #article:hover{background-color: rgba(108, 41, 95, 0.181); border-radius: 30px;}
+  #cart:hover{background-color: rgba(108, 41, 95, 0.181); border-radius: 30px;}
+  
+ 
+  nav ul li ul li{
     width: 180px;
     border-radius: 5px;
-}
-nav ul li ul li a{
+  }
+  nav ul li ul li a{
     padding: 10px 10px;
     font-size: 20px
-}
-nav ul li #availdrop li a:hover{
-    background-color: rgb(255, 238, 241);
+  }
+  nav ul li #availdrop li a:hover{
+    background-color: rgb(226, 171, 181);
     width:237px
-}
-nav ul li #shopdrop li a:hover{
-    background-color: rgb(255, 238, 241);
+  }
+  nav ul li #shopdrop li a:hover{
+    background-color: rgb(226, 171, 181);
     width:160px
-}
-nav ul li #articledrop li a:hover{
-    background-color: rgb(255, 238, 241);
+  }
+  nav ul li #articledrop li a:hover{
+    background-color: rgb(226, 171, 181);
     width:160px
-}
-/* //// SEARCH BAR */
-
-form {
-    background-color: pink;
+  }
+  /* //// SEARCH BAR */
+  
+  form {
+    background-color: rgba(108, 41, 95, 0.31);
     width: 200px;
     height: 40px;
     border-radius: 5px;
@@ -140,33 +134,56 @@ form {
     color: #fff;
     opacity: 0.7; 
   }
-
-
-
-/* MAIN BODY //////////////////////////////////// */
-main{
-    background-color: #AED9E0;
-    margin: 0 auto;
-    width: 80vw;
-    height: 100vh;
-    border-radius: 5px;
-}
-
-#randomBunDiv {
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+  svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+  
+  /* MAIN BODY////////////////////////////////////////////// */
+  #bgcontainer{
+    display: flex;
+    justify-content: center;
+  }
+  #backgrounddiv{
+    position: absolute;
+    background-color: #b77f73d3;
+    height: 200vh;
+    width: 80%;
+  }
+  main{
+    height: 120vh
+  }
+  
+  #randomBunDiv {
+    position: relative;
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
 #randomBunBtn {
     background-color: pink;
-    color: white;
+    color: rgb(102, 34, 34);
     border-color: pink;
-    border-radius: 5px
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    margin-top: 80px
 }
 #firstBunRow{
+  position: relative;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 60px
+    padding-top: 100px
 }
 .bunImg{
     display: block;
@@ -208,8 +225,14 @@ div .bunCard:hover{
     transform: scale(1.2);
     z-index: 2;
 }
-/* FOOTER /////////////////////////// */
-footer{
-    background: pink;
-    height: 150px
-}
+
+
+  /* FOOTER///////////////////////////////////////////// */
+  
+  footer{
+    position: absolute;
+    background-color: pink;
+    top: 1500px;
+    height: 200px; 
+    width: 100vw
+  }
