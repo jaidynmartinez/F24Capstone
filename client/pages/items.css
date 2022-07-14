@@ -304,6 +304,7 @@ margin-top: 35%;
 }
 .card-item img{
     width:300px;
+    border-radius: 20px;
 }
 .card-item .details{
     text-align: center;    
